@@ -9,10 +9,9 @@ body {
     padding: 0;
 }
 
-.container{
-  display: flex;
-  flex-direction: column;
-  
+.container {
+    display: flex;
+    flex-direction: column;
 }
 
 .main-header {
@@ -22,6 +21,7 @@ body {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        position: fixed;
     }
     &__burger {
         width: 25px;
@@ -39,11 +39,12 @@ body {
     }
     &__logo {
         max-width: 100%;
-        margin: 30px 0 0 10px;
+        margin: 50px 0 0 20px;
     }
     &__nav {
         display: flex;
         height: 43px;
+        position: re;
          :nth-child(1) {
             background: url(../images/sprite.svg) no-repeat 0 0;
             width: 27px;
@@ -52,23 +53,17 @@ body {
         }
          :nth-child(2) {
             width: 43px;
-            height: 43px;
         }
          :nth-child(3) {
             background: #BBB8B6 url(../images/sprite.svg) no-repeat -304px 12px;
             width: 43px;
-            height: 43px;
         }
          :nth-child(4) {
             background: url(../images/sprite.svg) no-repeat -74px 0;
-            width: 30px;
-            height: 27px;
-            margin: 10px;
-             :hover {
-                background: url(../images/sprite.svg) no-repeat -154px 0;
-                width: 30px;
-                height: 28px;
-                background-color: tomato;
+            width: 43px;
+            &:hover {
+                background: url(../images/sprite.svg) no-repeat -114px 0;
+                background-color: #ff5759;
             }
         }
          :nth-child(5) {
@@ -92,97 +87,87 @@ body {
     }
 }
 
-.main-content{
-  background-color:white;
-  margin-top: 80px;
-  display: flex;
-  flex-direction: column;
-  background-color: #f8f8f8;
-  
-  .section-fiestas{
-    
-    flex-wrap: wrap;
+.main-content {
+    background-color: white;
+    margin-top: 80px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  
-    .section-fiestas__icon{
-      position:absolute;
-      top:-60px;
-      
-      & img{
-        border-color: #f8f8f8;
-       
-      }
-      }
-    .section-fiestas__title{
-        display:flex;
+    background-color: #f8f8f8;
+    .section-fiestas {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100px;
-        margin-bottom: 80px;
-        margin-top: 80px;
-        
-      
-          h1{
-          height: 80px;
-          width:200px;
-          font: 12px/1.55 'Source Sans Pro', sans-serif;
-          padding: 25px 0 0px 25px;
-          text-transform: uppercase;
-          margin:50px 0 0 20px;
-          line-height: 22px;
-          font-size: 22px;
-          font-weight: 900;
-          letter-spacing: 6px;
-          color: #2E2925;
-          border: solid black;
-          border-width: 3px 0;
-        } 
-      }
-    .article-box{
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-          justify-content: center;
-        }   
-    
-      .button{
-      height: 20px;
-      display: flex;
-      justify-content: center;
-      }
-    
-  }
-}
-.footer{
-  display: flex;
-  background-color: crimson;
-  height: 20px;
-  .info-icons{
-    display: flex;
-    justify-content: center;
-    background-color: cornflowerblue;
-    .info-icons__list{
-      display: flex;
-    
-      .camion-icon{
-      display: block;
-      height: 60px;
-      margin: 0 auto 25px;
-      width: 85px;
-      
-      .icon {
-       background:  0 -38px no-repeat transparent;
-       background-image: url(./media/sprite.svg);
-     }
+        position: relative;
+        .section-fiestas__icon {
+            position: absolute;
+            top: -60px;
+            & img {
+                border-color: #f8f8f8;
+            }
+        }
+        .section-fiestas__title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            margin-bottom: 80px;
+            margin-top: 80px;
+            h1 {
+                height: 80px;
+                width: 200px;
+                font: 12px/1.55 'Source Sans Pro', sans-serif;
+                padding: 25px 0 0px 25px;
+                text-transform: uppercase;
+                margin: 50px 0 0 20px;
+                line-height: 22px;
+                font-size: 22px;
+                font-weight: 900;
+                letter-spacing: 6px;
+                color: #2E2925;
+                border: solid black;
+                border-width: 3px 0;
+            }
+        }
+        .article-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .button {
+            height: 20px;
+            display: flex;
+            justify-content: center;
+        }
     }
-  }
-  }
-  
 }
+
+.footer {
+    display: flex;
+    background-color: crimson;
+    height: 20px;
+    .info-icons {
+        display: flex;
+        justify-content: center;
+        background-color: cornflowerblue;
+        .info-icons__list {
+            display: flex;
+            .camion-icon {
+                display: block;
+                height: 60px;
+                margin: 0 auto 25px;
+                width: 85px;
+                .icon {
+                    background: 0 -38px no-repeat transparent;
+                    background-image: url(./media/sprite.svg);
+                }
+            }
+        }
+    }
+}
+
 
 /* Media Queries */
 

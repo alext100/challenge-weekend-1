@@ -13,16 +13,15 @@ body {
   flex-direction: column;
 }
 
-.main-header .main-header__container {
 .main-header {
   padding-bottom: 50px;
 }
 .main-header__container {
-
   background-color: #f8f8f8;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  position: fixed;
 }
 .main-header__burger {
   width: 25px;
@@ -40,11 +39,12 @@ body {
 }
 .main-header__logo {
   max-width: 100%;
-  margin: 30px 0 0 10px;
+  margin: 50px 0 0 20px;
 }
 .main-header__nav {
   display: flex;
   height: 43px;
+  position: re;
 }
 .main-header__nav :nth-child(1) {
   background: url(../images/sprite.svg) no-repeat 0 0;
@@ -54,18 +54,36 @@ body {
 }
 .main-header__nav :nth-child(2) {
   width: 43px;
-  height: 43px;
 }
 .main-header__nav :nth-child(3) {
   background: #BBB8B6 url(../images/sprite.svg) no-repeat -304px 12px;
   width: 43px;
-  height: 43px;
 }
 .main-header__nav :nth-child(4) {
   background: url(../images/sprite.svg) no-repeat -74px 0;
-  width: 30px;
-  height: 27px;
-  margin: 10px;
+  width: 43px;
+}
+.main-header__nav :nth-child(4):hover {
+  background: url(../images/sprite.svg) no-repeat -114px 0;
+  background-color: #ff5759;
+}
+.main-header__nav :nth-child(5) {
+  width: 43px;
+  height: 43px;
+  background-color: #ff5759;
+  position: relative;
+}
+.main-header__nav :nth-child(5) :nth-child(1) {
+  position: absolute;
+  font-family: "Myriad Pro", "Myriad Web", "Tahoma", "Helvetica", "Arial", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  background: none;
+  display: block;
+  height: auto;
+  margin: 0;
+  left: 38%;
+  top: 15%;
 }
 
 .main-content {
@@ -123,46 +141,33 @@ body {
   height: 20px;
   display: flex;
   justify-content: center;
-=======
-.main-header__nav :nth-child(4) :hover {
-  background: url(../images/sprite.svg) no-repeat -154px 0;
-  width: 30px;
-  height: 28px;
-  background-color: tomato;
-}
-.main-header__nav :nth-child(5) {
-  width: 43px;
-  height: 43px;
-  background-color: #ff5759;
-  position: relative;
-}
-.main-header__nav :nth-child(5) :nth-child(1) {
-  position: absolute;
-  font-family: "Myriad Pro", "Myriad Web", "Tahoma", "Helvetica", "Arial", sans-serif;
-  font-size: 20px;
-  color: #fff;
-  background: none;
-  display: block;
-  height: auto;
-  margin: 0;
-  left: 38%;
-  top: 15%;
-}
-
-.main-content {
-  background-color: blue;
-}
-.main-content .section-fiestas {
-  background-color: chartreuse;
-}
-.main-content .section-envios {
-  background-color: cornflowerblue;
-
 }
 
 .footer {
+  display: flex;
   background-color: crimson;
   height: 20px;
 }
+.footer .info-icons {
+  display: flex;
+  justify-content: center;
+  background-color: cornflowerblue;
+}
+.footer .info-icons .info-icons__list {
+  display: flex;
+}
+.footer .info-icons .info-icons__list .camion-icon {
+  display: block;
+  height: 60px;
+  margin: 0 auto 25px;
+  width: 85px;
+}
+.footer .info-icons .info-icons__list .camion-icon .icon {
+  background: 0 -38px no-repeat transparent;
+  background-image: url(./media/sprite.svg);
+}
+
+/* Media Queries */
+/* @media only screen and (min-width: $breakpoint-desktop) {} */
 
 /*# sourceMappingURL=styles.css.map */
