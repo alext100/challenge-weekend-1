@@ -182,10 +182,20 @@ body {
             width: 84px;
             height: 54px;
         }
-        .footer__icons--envio24 {
+        .footer__icons--envio24 .icon {
             background: url(../images/sprite.svg) no-repeat -89px -42px;
             width: 55px;
             height: 55px;
+        }
+        .subtitle-1 {
+            text-transform: uppercase;
+            color: #67625f;
+            font-size: 12px;
+            line-height: 18px;
+            text-decoration: none;
+        }
+        .subtitle-2 {
+            display: block;
         }
         .footer__icons--second-row {
             display: flex;
