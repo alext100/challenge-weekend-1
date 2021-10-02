@@ -74,9 +74,13 @@ body {
          :nth-child(4) {
             background: url(../images/sprite.svg) no-repeat -74px 0;
             width: 43px;
+            background-position-x: -68px;
+            background-position-y: 7px;
             &:hover {
-                background: url(../images/sprite.svg) no-repeat -114px 0;
-                background-color: #ff5759;
+                background: #ff5759 url(../images/sprite.svg) no-repeat -114px 0;
+                background-position-x: -68px;
+                background-position-y: 7px;
+                //background-color: #ff5759;
             }
         }
          :nth-child(5) {
