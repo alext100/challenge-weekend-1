@@ -9,6 +9,12 @@ body {
     padding: 0;
 }
 
+.container{
+  display: flex;
+  flex-direction: column;
+  
+}
+
 .main-header {
     padding-bottom: 50px;
     &__container {
@@ -86,21 +92,97 @@ body {
     }
 }
 
-.main-content {
-    background-color: blue;
-    .section-fiestas {
-        background-color: chartreuse;
-    }
-    .section-envios {
-        background-color: cornflowerblue;
-    }
+.main-content{
+  background-color:white;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8f8;
+  
+  .section-fiestas{
+    
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  
+    .section-fiestas__icon{
+      position:absolute;
+      top:-60px;
+      
+      & img{
+        border-color: #f8f8f8;
+       
+      }
+      }
+    .section-fiestas__title{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        margin-bottom: 80px;
+        margin-top: 80px;
+        
+      
+          h1{
+          height: 80px;
+          width:200px;
+          font: 12px/1.55 'Source Sans Pro', sans-serif;
+          padding: 25px 0 0px 25px;
+          text-transform: uppercase;
+          margin:50px 0 0 20px;
+          line-height: 22px;
+          font-size: 22px;
+          font-weight: 900;
+          letter-spacing: 6px;
+          color: #2E2925;
+          border: solid black;
+          border-width: 3px 0;
+        } 
+      }
+    .article-box{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+          justify-content: center;
+        }   
+    
+      .button{
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      }
+    
+  }
 }
-
-.footer {
-    background-color: crimson;
-    height: 50px;
+.footer{
+  display: flex;
+  background-color: crimson;
+  height: 20px;
+  .info-icons{
+    display: flex;
+    justify-content: center;
+    background-color: cornflowerblue;
+    .info-icons__list{
+      display: flex;
+    
+      .camion-icon{
+      display: block;
+      height: 60px;
+      margin: 0 auto 25px;
+      width: 85px;
+      
+      .icon {
+       background:  0 -38px no-repeat transparent;
+       background-image: url(./media/sprite.svg);
+     }
+    }
+  }
+  }
+  
 }
-
 
 /* Media Queries */
 
