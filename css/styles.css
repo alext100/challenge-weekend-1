@@ -1,3 +1,16 @@
+.main-content .section-fiestas .article-box .article-box__third-box h2, .main-content .section-fiestas .article-box .article-box__second-box h2, .main-content .section-fiestas .article-box .article-box__first-box h2 {
+  width: 176px;
+  height: 67px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 15px 20px;
+  margin: 0;
+  align-self: flex-end;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -69,7 +82,7 @@ body {
   width: 43px;
 }
 .main-header__nav :nth-child(3) {
-  background: #BBB8B6 url(../images/sprite.svg) no-repeat -304px 12px;
+  background: #bbb8b6 url(../images/sprite.svg) no-repeat -304px 12px;
   width: 43px;
 }
 .main-header__nav :nth-child(4) {
@@ -101,6 +114,30 @@ body {
   left: 38%;
   top: 15%;
 }
+.main-header__nav :nth-child(4) :hover {
+  background: url(../images/sprite.svg) no-repeat -154px 0;
+  width: 30px;
+  height: 28px;
+  background-color: tomato;
+}
+.main-header__nav :nth-child(5) {
+  width: 43px;
+  height: 43px;
+  background-color: #ff5759;
+  position: relative;
+}
+.main-header__nav :nth-child(5) :nth-child(1) {
+  position: absolute;
+  font-family: "Myriad Pro", "Myriad Web", "Tahoma", "Helvetica", "Arial", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  background: none;
+  display: block;
+  height: auto;
+  margin: 0;
+  left: 38%;
+  top: 15%;
+}
 
 .main-content {
   background-color: white;
@@ -108,6 +145,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #f8f8f8;
+  margin-bottom: 80px;
 }
 .main-content .section-fiestas {
   flex-wrap: wrap;
@@ -136,14 +174,14 @@ body {
   height: 80px;
   width: 200px;
   font: 12px/1.55 "Source Sans Pro", sans-serif;
-  padding: 25px 0 0px 25px;
+  padding: 25px 0 0px 35px;
   text-transform: uppercase;
   margin: 50px 0 0 20px;
   line-height: 22px;
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 900;
   letter-spacing: 6px;
-  color: #2E2925;
+  color: #2e2925;
   border: solid black;
   border-width: 3px 0;
 }
@@ -153,10 +191,60 @@ body {
   align-items: center;
   justify-content: center;
 }
-.main-content .section-fiestas .button {
+.main-content .section-fiestas .article-box a {
+  text-decoration: none;
+  color: #5e5b58;
+  font-family: Source Sans Pro, sans-serif;
+}
+.main-content .section-fiestas .article-box .article-box__first-box {
+  background-image: url(../images/Dia-del-padre-resized.png);
+  background-size: cover;
+  width: 330px;
+  height: 133px;
+  display: flex;
+  margin-bottom: 15px;
+}
+.main-content .section-fiestas .article-box .article-box__second-box {
+  background-image: url(../images/figuras-tartas_1-resized.png);
+  background-position: center;
+  background-size: cover;
+  width: 330px;
+  height: 133px;
+  display: flex;
+  margin-bottom: 15px;
+}
+.main-content .section-fiestas .article-box .article-box__third-box {
+  background-image: url(../images/foto-palomitas-resized.png);
+  background-position: center;
+  background-size: cover;
+  width: 330px;
+  height: 133px;
+  display: flex;
+  margin-bottom: 15px;
+}
+.main-content .section-fiestas .button button {
+  margin-top: 20px;
+  width: 130px;
+  height: 60px;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
+  font-weight: 500;
+  line-height: 1.7;
+  background-color: #ff5959;
+  color: #fff;
+}
+
+.footer {
+  display: flex;
+  background-color: crimson;
   height: 20px;
+}
+.footer .info-icons {
   display: flex;
   justify-content: center;
+
 }
 
 .footer {
@@ -178,6 +266,19 @@ body {
   margin: 0 auto 25px;
   width: 85px;
 }
+=======
+  background-color: cornflowerblue;
+}
+.footer .info-icons .info-icons__list {
+  display: flex;
+}
+.footer .info-icons .info-icons__list .camion-icon {
+  display: block;
+  height: 60px;
+  margin: 0 auto 25px;
+  width: 85px;
+}
+
 .footer .info-icons .info-icons__list .camion-icon .icon {
   background: 0 -38px no-repeat transparent;
   background-image: url(./media/sprite.svg);
