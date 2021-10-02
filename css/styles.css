@@ -67,7 +67,7 @@ body {
 .main-header__nav {
   display: flex;
   height: 43px;
-  position: re;
+  position: relative;
 }
 .main-header__nav :nth-child(1) {
   background: url(../images/sprite.svg) no-repeat 0 0;
@@ -248,40 +248,59 @@ body {
 }
 
 .footer {
+  margin-top: 126px;
   display: flex;
-  background-color: crimson;
-  height: 20px;
+  background-color: white;
+  height: 600px;
 }
-.footer .info-icons {
+.footer .footer__info-icons {
+  height: 438px;
+  width: 100vw;
   display: flex;
-  justify-content: center;
-  background-color: cornflowerblue;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #e8e6e5;
 }
-.footer .info-icons .info-icons__list {
+.footer .footer__info-icons .footer__icons--first-row {
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
-.footer .info-icons .info-icons__list .camion-icon {
+.footer .footer__info-icons .footer__icons--envio-gratis {
+  background: url(../images/sprite.svg) no-repeat 0 -43px;
+  width: 84px;
+  height: 54px;
+}
+.footer .footer__info-icons .footer__icons--envio24 .icon {
+  background: url(../images/sprite.svg) no-repeat -89px -42px;
+  width: 55px;
+  height: 55px;
+}
+.footer .footer__info-icons .subtitle-1 {
+  text-transform: uppercase;
+  color: #67625f;
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration: none;
+}
+.footer .footer__info-icons .subtitle-2 {
   display: block;
-  height: 60px;
-  margin: 0 auto 25px;
-  width: 85px;
 }
-=======
-  background-color: cornflowerblue;
-}
-.footer .info-icons .info-icons__list {
+.footer .footer__info-icons .footer__icons--second-row {
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
-.footer .info-icons .info-icons__list .camion-icon {
-  display: block;
-  height: 60px;
-  margin: 0 auto 25px;
-  width: 85px;
+.footer .footer__info-icons .footer__icons--devolucion {
+  background: url(../images/sprite.svg) no-repeat -150px -35px;
+  width: 68px;
+  height: 62px;
 }
+.footer .footer__info-icons .footer__icons--reembolso {
+  background: url(../images/sprite.svg) no-repeat -223px -45px;
+  width: 77px;
+  height: 52px;
 
-.footer .info-icons .info-icons__list .camion-icon .icon {
-  background: 0 -38px no-repeat transparent;
-  background-image: url(./media/sprite.svg);
 }
 
 /* Media Queries */

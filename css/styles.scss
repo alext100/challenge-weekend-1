@@ -55,7 +55,7 @@ body {
     &__nav {
         display: flex;
         height: 43px;
-        position: re;
+        position: relative;
          :nth-child(1) {
             background: url(../images/sprite.svg) no-repeat 0 0;
             width: 27px;
@@ -81,7 +81,6 @@ body {
                 background: #ff5759 url(../images/sprite.svg) no-repeat -114px 0;
                 background-position-x: -68px;
                 background-position-y: 7px;
-                //background-color: #ff5759;
             }
         }
          :nth-child(5) {
@@ -220,25 +219,56 @@ body {
   }
 }
 .footer {
-  display: flex;
-  background-color: crimson;
-  height: 20px;
-  .info-icons {
+    margin-top: 126px;
     display: flex;
-    justify-content: center;
-    background-color: cornflowerblue;
-    .info-icons__list {
-      display: flex;
-
-      .camion-icon {
-        display: block;
-        height: 60px;
-        margin: 0 auto 25px;
-        width: 85px;
-
-        .icon {
-          background: 0 -38px no-repeat transparent;
-          background-image: url(./media/sprite.svg);
+    background-color: white;
+    height: 600px;
+    .footer__info-icons {
+        height: 438px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: #e8e6e5;
+        .footer__icons--first-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .footer__icons--envio-gratis {
+            background: url(../images/sprite.svg) no-repeat 0 -43px;
+            width: 84px;
+            height: 54px;
+        }
+        .footer__icons--envio24 .icon {
+            background: url(../images/sprite.svg) no-repeat -89px -42px;
+            width: 55px;
+            height: 55px;
+        }
+        .subtitle-1 {
+            text-transform: uppercase;
+            color: #67625f;
+            font-size: 12px;
+            line-height: 18px;
+            text-decoration: none;
+        }
+        .subtitle-2 {
+            display: block;
+        }
+        .footer__icons--second-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .footer__icons--devolucion {
+            background: url(../images/sprite.svg) no-repeat -150px -35px;
+            width: 68px;
+            height: 62px;
+        }
+        .footer__icons--reembolso {
+            background: url(../images/sprite.svg) no-repeat -223px -45px;
+            width: 77px;
+            height: 52px;
         }
       }
     }
