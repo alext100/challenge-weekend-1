@@ -1,190 +1,236 @@
 $breakpoint-desktop: 600px;
+@import "extends";
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font: 12px/1.55 "Source Sans Pro", sans-serif;
-    margin: 0;
-    padding: 0;
+  font: 12px/1.55 "Source Sans Pro", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
-  
 }
 
 .main-header {
-    padding-bottom: 50px;
-    &__container {
-        background-color: #f8f8f8;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+  padding-bottom: 50px;
+  &__container {
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  &__burger {
+    width: 25px;
+    height: 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: sticky;
+    left: 10px;
+  }
+  &__burger div {
+    height: 4px;
+    background-color: #ff5759;
+    border-radius: 15px;
+  }
+  &__logo {
+    max-width: 100%;
+    margin: 30px 0 0 10px;
+  }
+  &__nav {
+    display: flex;
+    height: 43px;
+    :nth-child(1) {
+      background: url(../images/sprite.svg) no-repeat 0 0;
+      width: 27px;
+      height: 27px;
+      margin: 10px;
     }
-    &__burger {
-        width: 25px;
-        height: 19px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        position: sticky;
-        left: 10px;
+    :nth-child(2) {
+      width: 43px;
+      height: 43px;
     }
-    &__burger div {
-        height: 4px;
-        background-color: #ff5759;
-        border-radius: 15px;
+    :nth-child(3) {
+      background: #bbb8b6 url(../images/sprite.svg) no-repeat -304px 12px;
+      width: 43px;
+      height: 43px;
     }
-    &__logo {
-        max-width: 100%;
-        margin: 30px 0 0 10px;
+    :nth-child(4) {
+      background: url(../images/sprite.svg) no-repeat -74px 0;
+      width: 30px;
+      height: 27px;
+      margin: 10px;
+      :hover {
+        background: url(../images/sprite.svg) no-repeat -154px 0;
+        width: 30px;
+        height: 28px;
+        background-color: tomato;
+      }
     }
-    &__nav {
-        display: flex;
-        height: 43px;
-         :nth-child(1) {
-            background: url(../images/sprite.svg) no-repeat 0 0;
-            width: 27px;
-            height: 27px;
-            margin: 10px;
-        }
-         :nth-child(2) {
-            width: 43px;
-            height: 43px;
-        }
-         :nth-child(3) {
-            background: #BBB8B6 url(../images/sprite.svg) no-repeat -304px 12px;
-            width: 43px;
-            height: 43px;
-        }
-         :nth-child(4) {
-            background: url(../images/sprite.svg) no-repeat -74px 0;
-            width: 30px;
-            height: 27px;
-            margin: 10px;
-             :hover {
-                background: url(../images/sprite.svg) no-repeat -154px 0;
-                width: 30px;
-                height: 28px;
-                background-color: tomato;
-            }
-        }
-         :nth-child(5) {
-            width: 43px;
-            height: 43px;
-            background-color: #ff5759;
-            position: relative;
-             :nth-child(1) {
-                position: absolute;
-                font-family: "Myriad Pro", "Myriad Web", "Tahoma", "Helvetica", "Arial", sans-serif;
-                font-size: 20px;
-                color: #fff;
-                background: none;
-                display: block;
-                height: auto;
-                margin: 0;
-                left: 38%;
-                top: 15%;
-            }
-        }
+    :nth-child(5) {
+      width: 43px;
+      height: 43px;
+      background-color: #ff5759;
+      position: relative;
+      :nth-child(1) {
+        position: absolute;
+        font-family: "Myriad Pro", "Myriad Web", "Tahoma", "Helvetica", "Arial",
+          sans-serif;
+        font-size: 20px;
+        color: #fff;
+        background: none;
+        display: block;
+        height: auto;
+        margin: 0;
+        left: 38%;
+        top: 15%;
+      }
     }
+  }
 }
 
-.main-content{
-  background-color:white;
+.main-content {
+  background-color: white;
   margin-top: 80px;
   display: flex;
   flex-direction: column;
   background-color: #f8f8f8;
-  
-  .section-fiestas{
-    
+  margin-bottom: 80px;
+
+  .section-fiestas {
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
-  
-    .section-fiestas__icon{
-      position:absolute;
-      top:-60px;
-      
-      & img{
+
+    .section-fiestas__icon {
+      position: absolute;
+      top: -60px;
+
+      & img {
         border-color: #f8f8f8;
-       
       }
-      }
-    .section-fiestas__title{
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        height: 100px;
-        margin-bottom: 80px;
-        margin-top: 80px;
-        
-      
-          h1{
-          height: 80px;
-          width:200px;
-          font: 12px/1.55 'Source Sans Pro', sans-serif;
-          padding: 25px 0 0px 25px;
-          text-transform: uppercase;
-          margin:50px 0 0 20px;
-          line-height: 22px;
-          font-size: 22px;
-          font-weight: 900;
-          letter-spacing: 6px;
-          color: #2E2925;
-          border: solid black;
-          border-width: 3px 0;
-        } 
-      }
-    .article-box{
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-          justify-content: center;
-        }   
-    
-      .button{
-      height: 20px;
+    }
+    .section-fiestas__title {
       display: flex;
       justify-content: center;
+      align-items: center;
+      height: 100px;
+      margin-bottom: 80px;
+      margin-top: 80px;
+
+      h1 {
+        height: 80px;
+        width: 200px;
+        font: 12px/1.55 "Source Sans Pro", sans-serif;
+        padding: 25px 0 0px 35px;
+        text-transform: uppercase;
+        margin: 50px 0 0 20px;
+        line-height: 22px;
+        font-size: 25px;
+        font-weight: 900;
+        letter-spacing: 6px;
+        color: #2e2925;
+        border: solid black;
+        border-width: 3px 0;
       }
-    
+    }
+    .article-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      a {
+        text-decoration: none;
+        color: #5e5b58;
+        font-family: Source Sans Pro, sans-serif;
+      }
+
+      .article-box__first-box {
+        background-image: url(../images/Dia-del-padre-resized.png);
+        background-size: cover;
+        width: 330px;
+        height: 133px;
+        display: flex;
+        margin-bottom: 15px;
+
+        h2 {
+          @extend %h2imagearticle;
+        }
+      }
+      .article-box__second-box {
+        background-image: url(../images/figuras-tartas_1-resized.png);
+        background-position: center;
+        background-size: cover;
+        width: 330px;
+        height: 133px;
+        display: flex;
+        margin-bottom: 15px;
+        h2 {
+          @extend %h2imagearticle;
+        }
+      }
+      .article-box__third-box {
+        background-image: url(../images/foto-palomitas-resized.png);
+        background-position: center;
+        background-size: cover;
+        width: 330px;
+        height: 133px;
+        display: flex;
+        margin-bottom: 15px;
+        h2 {
+          @extend %h2imagearticle;
+        }
+      }
+    }
+
+    .button button {
+      margin-top: 20px;
+      width: 130px;
+      height: 60px;
+      text-align: center;
+      font-size: 16px;
+      text-transform: uppercase;
+      border: none;
+      font-weight: 500;
+      line-height: 1.7;
+      background-color: #ff5959;
+      color: #fff;
+    }
   }
 }
-.footer{
+.footer {
   display: flex;
   background-color: crimson;
   height: 20px;
-  .info-icons{
+  .info-icons {
     display: flex;
     justify-content: center;
     background-color: cornflowerblue;
-    .info-icons__list{
+    .info-icons__list {
       display: flex;
-    
-      .camion-icon{
-      display: block;
-      height: 60px;
-      margin: 0 auto 25px;
-      width: 85px;
-      
-      .icon {
-       background:  0 -38px no-repeat transparent;
-       background-image: url(./media/sprite.svg);
-     }
+
+      .camion-icon {
+        display: block;
+        height: 60px;
+        margin: 0 auto 25px;
+        width: 85px;
+
+        .icon {
+          background: 0 -38px no-repeat transparent;
+          background-image: url(./media/sprite.svg);
+        }
+      }
     }
   }
-  }
-  
 }
 
 /* Media Queries */
-
 
 /* @media only screen and (min-width: $breakpoint-desktop) {} */
