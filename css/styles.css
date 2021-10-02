@@ -82,7 +82,7 @@ body {
   width: 43px;
 }
 .main-header__nav :nth-child(3) {
-  background: #bbb8b6 url(../images/sprite.svg) no-repeat -304px 12px;
+  background: #BBB8B6 url(../images/sprite.svg) no-repeat -304px 12px;
   width: 43px;
 }
 .main-header__nav :nth-child(4) {
@@ -95,30 +95,6 @@ body {
   background: #ff5759 url(../images/sprite.svg) no-repeat -114px 0;
   background-position-x: -68px;
   background-position-y: 7px;
-}
-.main-header__nav :nth-child(5) {
-  width: 43px;
-  height: 43px;
-  background-color: #ff5759;
-  position: relative;
-}
-.main-header__nav :nth-child(5) :nth-child(1) {
-  position: absolute;
-  font-family: "Myriad Pro", "Myriad Web", "Tahoma", "Helvetica", "Arial", sans-serif;
-  font-size: 20px;
-  color: #fff;
-  background: none;
-  display: block;
-  height: auto;
-  margin: 0;
-  left: 38%;
-  top: 15%;
-}
-.main-header__nav :nth-child(4) :hover {
-  background: url(../images/sprite.svg) no-repeat -154px 0;
-  width: 30px;
-  height: 28px;
-  background-color: tomato;
 }
 .main-header__nav :nth-child(5) {
   width: 43px;
@@ -237,17 +213,6 @@ body {
 }
 
 .footer {
-  display: flex;
-  background-color: crimson;
-  height: 20px;
-}
-.footer .info-icons {
-  display: flex;
-  justify-content: center;
-
-}
-
-.footer {
   margin-top: 126px;
   display: flex;
   background-color: white;
@@ -300,7 +265,6 @@ body {
   background: url(../images/sprite.svg) no-repeat -223px -45px;
   width: 77px;
   height: 52px;
-
 }
 
 /* Media Queries */
