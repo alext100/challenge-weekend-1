@@ -11,14 +11,8 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  overflow: scroll;
 }
 
-.main-header div {
-  width: 100vw;
-  height: 30px;
-  background-color: brown;
-=======
 .main-header .main-header__container {
   background-color: #f8f8f8;
   display: flex;
@@ -61,39 +55,41 @@ body {
 
 .main-content {
   background-color: white;
-  margin-top: 50px;
-  height: 300px;
+  margin-top: 80px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  background-color: #f8f8f8;
 }
 .main-content .section-fiestas {
-  background-color: gray;
+  flex-wrap: wrap;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  height: 500px;
+  align-items: center;
+  position: relative;
 }
-.main-content .section-fiestas .section-fiestas__content {
-  display: flex;
-  justify-content: center;
+.main-content .section-fiestas .section-fiestas__icon {
+  position: absolute;
+  top: -60px;
 }
-.main-content .section-fiestas .section-fiestas__content .section-fiestas__icon {
-  display: block;
+.main-content .section-fiestas .section-fiestas__icon img {
+  border-color: #f8f8f8;
 }
-.main-content .section-fiestas .section-fiestas__content .section-fiestas__title {
+.main-content .section-fiestas .section-fiestas__title {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100px;
-  margin-top: 100px;
-  padding-top: 100px;
+  margin-bottom: 80px;
+  margin-top: 80px;
 }
-.main-content .section-fiestas .section-fiestas__content .section-fiestas__title h1 {
+.main-content .section-fiestas .section-fiestas__title h1 {
   height: 80px;
   width: 200px;
   font: 12px/1.55 "Source Sans Pro", sans-serif;
-  padding: 20px;
+  padding: 25px 0 0px 25px;
   text-transform: uppercase;
-  margin: 20px 0 0 20px;
+  margin: 50px 0 0 20px;
   line-height: 22px;
   font-size: 22px;
   font-weight: 900;
@@ -102,14 +98,13 @@ body {
   border: solid black;
   border-width: 3px 0;
 }
-.main-content .section-fiestas .section-fiestas__content .section-fiestas__title .article-box {
+.main-content .section-fiestas .article-box {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
-.main-content .section-fiestas .section-fiestas__content .section-fiestas__title .article-box .article-box__first-box {
-  display: flex;
-}
-.main-content .section-fiestas .section-fiestas__content .button {
+.main-content .section-fiestas .button {
   height: 20px;
   display: flex;
   justify-content: center;
@@ -118,7 +113,7 @@ body {
 .footer {
   display: flex;
   background-color: crimson;
-  height: 50px;
+  height: 20px;
 }
 .footer .info-icons {
   display: flex;
@@ -138,8 +133,5 @@ body {
   background: 0 -38px no-repeat transparent;
   background-image: url(./media/sprite.svg);
 }
-
-/* Media Queries */
-/* @media only screen and (min-width: $breakpoint-desktop) {} */
 
 /*# sourceMappingURL=styles.css.map */
