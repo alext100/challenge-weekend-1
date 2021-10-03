@@ -229,7 +229,7 @@ body {
   background-color: #e8e6e5;
 }
 .footer .footer__info-icons .footer__footer-wrapper {
-  max-width: 350px;
+  max-width: 400px;
   margin: 0 auto;
 }
 .footer .footer__info-icons .footer__icons--first-row,
@@ -305,22 +305,61 @@ body {
   background-color: #f8f8f8;
 }
 .footer .footer__web-info .footer__redes-sociales {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 325px;
-  height: 160px;
 }
-.footer .footer__web-info .footer__redes-sociales h3 {
+.footer .footer__web-info .footer__redes-sociales::after {
+  display: block;
+  content: "";
+  border-bottom: 1px solid #bbb8b6;
+  padding-bottom: 35px;
+  width: 325px;
+  margin: 0 auto;
+}
+.footer .footer__web-info .footer__redes-sociales .redes-sociales__title {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 16px;
-  padding: 55px 0 15px;
+  padding: 55px 0 0 0;
   color: #67625f;
 }
-.footer .footer__web-info .footer__redes-sociales a:nth-child(1) {
-  background: url("../images/sprite.svg") no-repeat 0 -493px;
-  width: 32px;
-  height: 33px;
+.footer .footer__web-info .footer__redes-sociales .redes-sociales__title h3 {
+  font-weight: 400;
+  font-size: 1.1em;
 }
-
+.footer .footer__web-info .footer__redes-sociales .redes-sociales__icons {
+  display: flex;
+}
+.footer .footer__web-info .footer__redes-sociales .redes-sociales__icons a {
+  margin: 2px;
+}
+.footer .footer__web-info .footer__redes-sociales .redes-sociales__icons :nth-child(1) {
+  width: 33px;
+  height: 32px;
+  background: url(../images/sprite.svg) no-repeat 0 -494px;
+}
+.footer .footer__web-info .footer__redes-sociales .redes-sociales__icons :nth-child(2) {
+  width: 33px;
+  height: 32px;
+  background: url(../images/sprite.svg) no-repeat -35px -494px;
+}
+.footer .footer__web-info .footer__redes-sociales .redes-sociales__icons :nth-child(3) {
+  width: 33px;
+  height: 32px;
+  background: url(../images/sprite.svg) no-repeat -71px -494px;
+}
+.footer .footer__web-info .footer__redes-sociales .redes-sociales__icons :nth-child(4) {
+  width: 33px;
+  height: 32px;
+  background: url(../images/sprite.svg) no-repeat -106px -494px;
+}
+.footer .footer__web-info .footer__redes-sociales .redes-sociales__icons :nth-child(5) {
+  width: 33px;
+  height: 32px;
+  background: url(../images/sprite.svg) no-repeat -177px -494px;
+}
 /* Media Queries */
 /* @media only screen and (min-width: $breakpoint-desktop) {} */
 
