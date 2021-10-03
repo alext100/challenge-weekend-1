@@ -219,7 +219,7 @@ body {
   background-color: white;
   height: 600px;
 }
-.footer .footer__info-icons {
+.footer__info-icons {
   height: 438px;
   width: 100vw;
   display: flex;
@@ -227,49 +227,60 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #e8e6e5;
+  /*         .footer__icons--envio-gratis a {
+      &:hover {
+          color: #FF5959;
+      }
+  } */
 }
 .footer .footer__info-icons .footer__footer-wrapper {
   max-width: 400px;
   margin: 0 auto;
 }
-.footer .footer__info-icons .footer__icons--first-row,
-.footer .footer__info-icons .footer__icons--second-row {
+.footer__info-icons .footer__icons--first-row,
+.footer__info-icons .footer__icons--second-row {
   display: flex;
   height: 170px;
 }
-.footer .footer__info-icons .footer__icons--envio-gratis .icon {
-  background: url(../images/sprite.svg) no-repeat 0 -37px;
-  width: 84px;
-  height: 54px;
-  padding-bottom: 70px;
-}
-.footer .footer__info-icons .footer__icons--envio-gratis .icon:hover {
-  background: url(../images/sprite.svg) no-repeat 0 -108px;
-}
-.footer .footer__info-icons .footer__icons--envio-gratis,
-.footer .footer__info-icons .footer__icons--envio24,
-.footer .footer__info-icons .footer__icons--devolucion,
-.footer .footer__info-icons .footer__icons--reembolso {
+
+.footer__info-icons .footer__icons--envio-gratis,
+.footer__info-icons .footer__icons--envio24,
+.footer__info-icons .footer__icons--devolucion,
+.footer__info-icons .footer__icons--reembolso {
   width: 200px;
 }
-.footer .footer__info-icons .footer__icons--envio-gratis a,
-.footer .footer__info-icons .footer__icons--envio24 a,
-.footer .footer__info-icons .footer__icons--devolucion a,
-.footer .footer__info-icons .footer__icons--reembolso a {
+.footer__info-icons .footer__icons--envio-gratis a,
+.footer__info-icons .footer__icons--envio24 a,
+.footer__info-icons .footer__icons--devolucion a,
+.footer__info-icons .footer__icons--reembolso a {
+  text-decoration: none;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: inherit;
 }
+.footer__info-icons .footer__icons--envio-gratis .icon {
+  background: url(../images/sprite.svg) no-repeat 0 -36px;
+  width: 84px;
+  height: 54px;
+  padding-bottom: 70px;
+}
+.footer__info-icons .footer__icons--envio-gratis .icon:hover {
+  background: url(../images/sprite.svg) no-repeat 0 -107px;
+}
+
 .footer .footer__info-icons .footer__icons--envio24 .icon {
   background: url(../images/sprite.svg) no-repeat -89px -36px;
   width: 55px;
   height: 55px;
   padding-bottom: 70px;
+
 }
-.footer .footer__info-icons .footer__icons--envio24 .icon:hover {
+.footer__info-icons .footer__icons--envio24 .icon:hover {
   background: url(../images/sprite.svg) no-repeat -89px -107px;
 }
+
+
 .footer .footer__info-icons .subtitle-1 {
   text-transform: uppercase;
   color: #67625f;
@@ -285,16 +296,38 @@ body {
   width: 68px;
   height: 62px;
   padding-bottom: 70px;
+
 }
-.footer .footer__info-icons .footer__icons--devolucion .icon:hover {
+.footer__info-icons .footer__icons--devolucion .icon:hover {
   background: url(../images/sprite.svg) no-repeat -150px -106px;
+  color: #FF5959;
 }
-.footer .footer__info-icons .footer__icons--reembolso .icon {
+.footer__info-icons .footer__icons--reembolso .icon {
+
   background: url(../images/sprite.svg) no-repeat -223px -36px;
   width: 77px;
   height: 52px;
   padding-bottom: 70px;
 }
+
+.footer__info-icons .footer__icons--reembolso .icon:hover {
+  background: url(../images/sprite.svg) no-repeat -223px -107px;
+}
+.footer__info-icons .subtitle-1 {
+  text-transform: uppercase;
+  color: #67625f;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+}
+.footer__info-icons .subtitle-2 {
+  display: block;
+  color: #67625f;
+  font-size: 12px;
+}
+.footer__info-icons .subtitle-1:hover,
+.footer__info-icons .subtitle-2:hover {
+  color: #FF5959;
 .footer .footer__info-icons .footer__icons--reembolso .icon:hover {
   background: url(../images/sprite.svg) no-repeat -223px -107px;
 }
