@@ -82,7 +82,7 @@ body {
   width: 43px;
 }
 .main-header__nav :nth-child(3) {
-  background: #bbb8b6 url(../images/sprite.svg) no-repeat -304px 12px;
+  background: #BBB8B6 url(../images/sprite.svg) no-repeat -304px 12px;
   width: 43px;
 }
 .main-header__nav :nth-child(4) {
