@@ -322,12 +322,13 @@ body {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 16px;
-  padding: 55px 0 0 0;
+  padding: 55px 0 10px 0;
   color: #67625f;
 }
 .footer .footer__web-info .footer__redes-sociales .redes-sociales__title h3 {
-  font-weight: 400;
-  font-size: 1.1em;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0;
 }
 .footer .footer__web-info .footer__redes-sociales .redes-sociales__icons {
   display: flex;
@@ -360,6 +361,66 @@ body {
   height: 32px;
   background: url(../images/sprite.svg) no-repeat -177px -494px;
 }
+.footer .footer__web-info .footer__subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 325px;
+}
+.footer .footer__web-info .footer__subscribe::after {
+  display: block;
+  content: "";
+  border-bottom: 1px solid #bbb8b6;
+  padding-bottom: 35px;
+  width: 325px;
+  margin: 0 auto;
+}
+.footer .footer__web-info .footer__subscribe .subscribe__title {
+  text-transform: uppercase;
+  line-height: 16px;
+  padding: 55px 0 15px;
+  color: #67625f;
+}
+.footer .footer__web-info .footer__subscribe .subscribe__title h3 {
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0;
+}
+.footer .footer__web-info .footer__subscribe .subscribe__items {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer__web-info .footer__subscribe .subscribe__items .email {
+  width: 325px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+.footer .footer__web-info .footer__subscribe .subscribe__items .privacy-label {
+  display: flex;
+  justify-content: center;
+  color: #67625f;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: none;
+}
+.footer .footer__web-info .footer__subscribe .subscribe__items .privacy-label a {
+  color: #67625f;
+}
+.footer .footer__web-info .footer__subscribe .subscribe__items .subscribe__button {
+  margin: 10px 0;
+  padding: 10px 0;
+  height: 50px;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0;
+  font-weight: 700;
+  letter-spacing: 0;
+  background-color: #ff5959;
+  border: none;
+  color: #fff;
+}
+
 /* Media Queries */
 /* @media only screen and (min-width: $breakpoint-desktop) {} */
 
