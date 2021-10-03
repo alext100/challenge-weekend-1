@@ -227,13 +227,8 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #e8e6e5;
-  /*         .footer__icons--envio-gratis a {
-      &:hover {
-          color: #FF5959;
-      }
-  } */
 }
-.footer .footer__info-icons .footer__footer-wrapper {
+.footer__info-icons .footer__footer-wrapper {
   max-width: 400px;
   margin: 0 auto;
 }
@@ -242,7 +237,6 @@ body {
   display: flex;
   height: 170px;
 }
-
 .footer__info-icons .footer__icons--envio-gratis,
 .footer__info-icons .footer__icons--envio24,
 .footer__info-icons .footer__icons--devolucion,
@@ -268,48 +262,31 @@ body {
 .footer__info-icons .footer__icons--envio-gratis .icon:hover {
   background: url(../images/sprite.svg) no-repeat 0 -107px;
 }
-
-.footer .footer__info-icons .footer__icons--envio24 .icon {
+.footer__info-icons .footer__icons--envio24 .icon {
   background: url(../images/sprite.svg) no-repeat -89px -36px;
   width: 55px;
   height: 55px;
   padding-bottom: 70px;
-
 }
 .footer__info-icons .footer__icons--envio24 .icon:hover {
   background: url(../images/sprite.svg) no-repeat -89px -107px;
 }
-
-
-.footer .footer__info-icons .subtitle-1 {
-  text-transform: uppercase;
-  color: #67625f;
-  font-size: 12px;
-  line-height: 18px;
-  text-decoration: none;
-}
-.footer .footer__info-icons .subtitle-2 {
-  display: block;
-}
-.footer .footer__info-icons .footer__icons--devolucion .icon {
+.footer__info-icons .footer__icons--devolucion .icon {
   background: url(../images/sprite.svg) no-repeat -150px -35px;
   width: 68px;
   height: 62px;
   padding-bottom: 70px;
-
 }
 .footer__info-icons .footer__icons--devolucion .icon:hover {
   background: url(../images/sprite.svg) no-repeat -150px -106px;
   color: #FF5959;
 }
 .footer__info-icons .footer__icons--reembolso .icon {
-
   background: url(../images/sprite.svg) no-repeat -223px -36px;
   width: 77px;
   height: 52px;
   padding-bottom: 70px;
 }
-
 .footer__info-icons .footer__icons--reembolso .icon:hover {
   background: url(../images/sprite.svg) no-repeat -223px -107px;
 }
@@ -328,8 +305,6 @@ body {
 .footer__info-icons .subtitle-1:hover,
 .footer__info-icons .subtitle-2:hover {
   color: #FF5959;
-.footer .footer__info-icons .footer__icons--reembolso .icon:hover {
-  background: url(../images/sprite.svg) no-repeat -223px -107px;
 }
 .footer .footer__web-info {
   display: flex;
@@ -452,6 +427,48 @@ body {
   background-color: #ff5959;
   border: none;
   color: #fff;
+}
+.footer .footer__web-info .footer__contact {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+.footer .footer__web-info .footer__contact .footer__contact-list ul,
+.footer .footer__web-info .footer__contact ol {
+  list-style: none;
+}
+.footer .footer__web-info .footer__contact .footer__contact-list ul {
+  overflow: hidden;
+  margin-top: 55px;
+}
+.footer .footer__web-info .footer__contact .footer__contact-about-terms li {
+  line-height: 30px;
+  margin-bottom: 9px;
+  text-align: center;
+}
+.footer .footer__web-info .footer__contact .footer__contact-about-terms a {
+  color: #FF5959;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-decoration: none;
+}
+.footer .footer__web-info .footer__contact .footer__contact--contacto .icon {
+  background: url(../images/sprite.svg) 0 -208px no-repeat;
+}
+.footer .footer__web-info .footer__contact .footer__contact--sobre .icon {
+  background: url(../images/sprite.svg) 0 -247px no-repeat;
+}
+.footer .footer__web-info .footer__contact .footer__contact--condiciones .icon {
+  background: url(../images/sprite.svg) 0 -286px no-repeat;
+}
+.footer .footer__web-info .footer__contact .footer__contact-about-terms a .icon {
+  display: block;
+  width: 30px;
+  height: 31px;
+  margin: auto;
+}
+.footer .footer__web-info .footer__contact .footer__contact-about-terms a:hover {
+  text-decoration: underline;
 }
 
 /* Media Queries */
