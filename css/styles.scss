@@ -220,22 +220,50 @@ body {
         width: 100vw;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        align-items: center;
+        justify-content: center;
         background-color: #e8e6e5;
-        .footer__icons--first-row {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
+        .footer__footer-wrapper {
+            max-width: 350px;
+            margin: 0 auto;
         }
-        .footer__icons--envio-gratis {
-            background: url(../images/sprite.svg) no-repeat 0 -43px;
+        .footer__icons--first-row,
+        .footer__icons--second-row {
+            display: flex;
+            height: 170px;
+        }
+        .footer__icons--envio-gratis .icon {
+            background: url(../images/sprite.svg) no-repeat 0 -37px;
             width: 84px;
             height: 54px;
+            padding-bottom: 70px;
+            &:hover {
+                background: url(../images/sprite.svg) no-repeat 0 -108px;
+            }
+        }
+        .footer__icons--envio-gratis,
+        .footer__icons--envio24,
+        .footer__icons--devolucion,
+        .footer__icons--reembolso {
+            width: 200px;
+        }
+        .footer__icons--envio-gratis a,
+        .footer__icons--envio24 a,
+        .footer__icons--devolucion a,
+        .footer__icons--reembolso a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: inherit;
         }
         .footer__icons--envio24 .icon {
-            background: url(../images/sprite.svg) no-repeat -89px -42px;
+            background: url(../images/sprite.svg) no-repeat -89px -36px;
             width: 55px;
             height: 55px;
+            padding-bottom: 70px;
+            &:hover {
+                background: url(../images/sprite.svg) no-repeat -89px -107px;
+            }
         }
         .subtitle-1 {
             text-transform: uppercase;
@@ -247,20 +275,23 @@ body {
         .subtitle-2 {
             display: block;
         }
-        .footer__icons--second-row {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-        }
-        .footer__icons--devolucion {
+        .footer__icons--devolucion .icon {
             background: url(../images/sprite.svg) no-repeat -150px -35px;
             width: 68px;
             height: 62px;
+            padding-bottom: 70px;
+            &:hover {
+                background: url(../images/sprite.svg) no-repeat -150px -106px;
+            }
         }
-        .footer__icons--reembolso {
-            background: url(../images/sprite.svg) no-repeat -223px -45px;
+        .footer__icons--reembolso .icon {
+            background: url(../images/sprite.svg) no-repeat -223px -36px;
             width: 77px;
             height: 52px;
+            padding-bottom: 70px;
+            &:hover {
+                background: url(../images/sprite.svg) no-repeat -223px -107px;
+            }
         }
     }
 }
