@@ -211,6 +211,9 @@ body {
       line-height: 1.7;
       background-color: #ff5959;
       color: #fff;
+      &:hover {
+        background: rgba(235, 104, 104, 0.5);
+      }
     }
   }
 }
@@ -349,26 +352,41 @@ body {
           width: 33px;
           height: 32px;
           background: url(../images/sprite.svg) no-repeat 0 -494px;
+          &:hover {
+            background: url(../images/sprite.svg) no-repeat 0 -574px;
+          }
         }
         & :nth-child(2) {
           width: 33px;
           height: 32px;
           background: url(../images/sprite.svg) no-repeat -35px -494px;
+          &:hover {
+            background: url(../images/sprite.svg) no-repeat -35px -574px;
+          }
         }
         & :nth-child(3) {
           width: 33px;
           height: 32px;
           background: url(../images/sprite.svg) no-repeat -71px -494px;
+          &:hover {
+            background: url(../images/sprite.svg) no-repeat -71px -574px;
+          }
         }
         & :nth-child(4) {
           width: 33px;
           height: 32px;
           background: url(../images/sprite.svg) no-repeat -106px -494px;
+          &:hover {
+            background: url(../images/sprite.svg) no-repeat -106px -574px;
+          }
         }
         & :nth-child(5) {
           width: 33px;
           height: 32px;
           background: url(../images/sprite.svg) no-repeat -177px -494px;
+          &:hover {
+            background: url(../images/sprite.svg) no-repeat -177px -574px;
+          }
         }
       }
     }
@@ -428,6 +446,9 @@ body {
           background-color: #ff5959;
           border: none;
           color: #fff;
+          &:hover {
+            background: rgba(235, 104, 104, 0.5);
+          }
         }
       }
     }

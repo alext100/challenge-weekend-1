@@ -211,6 +211,9 @@ body {
   background-color: #ff5959;
   color: #fff;
 }
+.main-content .section-fiestas .button button:hover {
+  background: rgba(235, 104, 104, 0.5);
+}
 
 .footer {
   margin-top: 126px;
@@ -349,25 +352,40 @@ body {
   height: 32px;
   background: url(../images/sprite.svg) no-repeat 0 -494px;
 }
+.footer .footer__web-info .footer__redes-sociales .redes-sociales__icons :nth-child(1):hover {
+  background: url(../images/sprite.svg) no-repeat 0 -574px;
+}
 .footer .footer__web-info .footer__redes-sociales .redes-sociales__icons :nth-child(2) {
   width: 33px;
   height: 32px;
   background: url(../images/sprite.svg) no-repeat -35px -494px;
+}
+.footer .footer__web-info .footer__redes-sociales .redes-sociales__icons :nth-child(2):hover {
+  background: url(../images/sprite.svg) no-repeat -35px -574px;
 }
 .footer .footer__web-info .footer__redes-sociales .redes-sociales__icons :nth-child(3) {
   width: 33px;
   height: 32px;
   background: url(../images/sprite.svg) no-repeat -71px -494px;
 }
+.footer .footer__web-info .footer__redes-sociales .redes-sociales__icons :nth-child(3):hover {
+  background: url(../images/sprite.svg) no-repeat -71px -574px;
+}
 .footer .footer__web-info .footer__redes-sociales .redes-sociales__icons :nth-child(4) {
   width: 33px;
   height: 32px;
   background: url(../images/sprite.svg) no-repeat -106px -494px;
 }
+.footer .footer__web-info .footer__redes-sociales .redes-sociales__icons :nth-child(4):hover {
+  background: url(../images/sprite.svg) no-repeat -106px -574px;
+}
 .footer .footer__web-info .footer__redes-sociales .redes-sociales__icons :nth-child(5) {
   width: 33px;
   height: 32px;
   background: url(../images/sprite.svg) no-repeat -177px -494px;
+}
+.footer .footer__web-info .footer__redes-sociales .redes-sociales__icons :nth-child(5):hover {
+  background: url(../images/sprite.svg) no-repeat -177px -574px;
 }
 .footer .footer__web-info .footer__subscribe {
   display: flex;
@@ -427,6 +445,9 @@ body {
   background-color: #ff5959;
   border: none;
   color: #fff;
+}
+.footer .footer__web-info .footer__subscribe .subscribe__items .subscribe__button:hover {
+  background: rgba(235, 104, 104, 0.5);
 }
 .footer .footer__web-info .footer__contact {
   display: flex;
