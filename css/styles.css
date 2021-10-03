@@ -230,6 +230,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #e8e6e5;
+  padding-top: 55px;
 }
 .footer__info-icons .footer__footer-wrapper {
   max-width: 400px;
