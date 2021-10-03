@@ -256,14 +256,39 @@ body {
   align-items: center;
   width: inherit;
 }
+.footer__info-icons .footer__icons--envio-gratis :hover .subtitle-1,
+.footer__info-icons .footer__icons--envio-gratis :hover .subtitle-2 {
+  color: #ff5959;
+}
+.footer__info-icons .footer__icons--envio-gratis :hover .icon {
+  background: url(../images/sprite.svg) no-repeat 0 -107px;
+}
+.footer__info-icons .footer__icons--envio24 :hover .subtitle-1,
+.footer__info-icons .footer__icons--envio24 :hover .subtitle-2 {
+  color: #ff5959;
+}
+.footer__info-icons .footer__icons--envio24 :hover .icon {
+  background: url(../images/sprite.svg) no-repeat -89px -107px;
+}
+.footer__info-icons .footer__icons--devolucion :hover .subtitle-1,
+.footer__info-icons .footer__icons--devolucion :hover .subtitle-2 {
+  color: #ff5959;
+}
+.footer__info-icons .footer__icons--devolucion :hover .icon {
+  background: url(../images/sprite.svg) no-repeat -150px -107px;
+}
+.footer__info-icons .footer__icons--reembolso :hover .subtitle-1,
+.footer__info-icons .footer__icons--reembolso :hover .subtitle-2 {
+  color: #ff5959;
+}
+.footer__info-icons .footer__icons--reembolso :hover .icon {
+  background: url(../images/sprite.svg) no-repeat -223px -107px;
+}
 .footer__info-icons .footer__icons--envio-gratis .icon {
   background: url(../images/sprite.svg) no-repeat 0 -36px;
   width: 84px;
   height: 54px;
   padding-bottom: 70px;
-}
-.footer__info-icons .footer__icons--envio-gratis .icon:hover {
-  background: url(../images/sprite.svg) no-repeat 0 -107px;
 }
 .footer__info-icons .footer__icons--envio24 .icon {
   background: url(../images/sprite.svg) no-repeat -89px -36px;
@@ -271,27 +296,17 @@ body {
   height: 55px;
   padding-bottom: 70px;
 }
-.footer__info-icons .footer__icons--envio24 .icon:hover {
-  background: url(../images/sprite.svg) no-repeat -89px -107px;
-}
 .footer__info-icons .footer__icons--devolucion .icon {
   background: url(../images/sprite.svg) no-repeat -150px -35px;
   width: 68px;
   height: 62px;
   padding-bottom: 70px;
 }
-.footer__info-icons .footer__icons--devolucion .icon:hover {
-  background: url(../images/sprite.svg) no-repeat -150px -106px;
-  color: #ff5959;
-}
 .footer__info-icons .footer__icons--reembolso .icon {
   background: url(../images/sprite.svg) no-repeat -223px -36px;
   width: 77px;
   height: 52px;
   padding-bottom: 70px;
-}
-.footer__info-icons .footer__icons--reembolso .icon:hover {
-  background: url(../images/sprite.svg) no-repeat -223px -107px;
 }
 .footer__info-icons .subtitle-1 {
   text-transform: uppercase;
@@ -304,10 +319,6 @@ body {
   display: block;
   color: #67625f;
   font-size: 12px;
-}
-.footer__info-icons .subtitle-1:hover,
-.footer__info-icons .subtitle-2:hover {
-  color: #ff5959;
 }
 .footer .footer__web-info {
   display: flex;
