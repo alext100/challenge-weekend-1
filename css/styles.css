@@ -177,7 +177,7 @@ body {
 .main-content .section-fiestas .article-box a {
   text-decoration: none;
   color: #5e5b58;
-  font-family: Source Sans Pro, sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 .main-content .section-fiestas .article-box .article-box__first-box {
   background-image: url(../images/Dia-del-padre-resized.png);
@@ -775,7 +775,7 @@ body {
     height: 33px;
   }
   .main-header__social-icon--3:hover {
-    background: url(../images/sprite.svg) no-repeat -71 -493px;
+    background: url(../images/sprite.svg) no-repeat -71px -493px;
   }
 
   .main-header__social-icon--4 {
