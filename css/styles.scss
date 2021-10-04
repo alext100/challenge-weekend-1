@@ -15,6 +15,10 @@ body {
     flex-direction: column;
 }
 
+.quick-access {
+    display: none;
+}
+
 .main-header {
     padding-bottom: 50px;
     &__container {
@@ -69,9 +73,6 @@ body {
                 background: url(../images/sprite.svg) no-repeat -37px 0;
             }
         }
-    }
-    .quick-access {
-        display: none;
     }
     &__nav--icon-2 {
         width: 43px;
