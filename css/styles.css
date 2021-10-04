@@ -549,10 +549,6 @@ body {
   margin-right: 10px;
 }
 
-.quick-access {
-  display: none;
-}
-
 /* Media Queries */
 @media only screen and (min-width: 600px) {
   .main-header__nav--icon-1 {
@@ -635,7 +631,7 @@ body {
     text-align: center;
   }
   .quick-access__links--news:before {
-    display: inline-block;
+    /*             display: inline-block; */
     width: 30px;
     height: 30px;
     background: url(../images/sprite.svg) -244px 4px no-repeat;
@@ -658,7 +654,7 @@ body {
     text-align: center;
   }
   .quick-access__links--offers::before {
-    display: inline-block;
+    /*             display: inline-block; */
     width: 30px;
     height: 30px;
     background: url(../images/sprite.svg) -274px 4px no-repeat;
