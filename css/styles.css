@@ -753,48 +753,48 @@ body {
   }
 
   .main-header__social-icon--1 {
-    background: url(../images/sprite.svg) no-repeat 0 -533px;
-    width: 32px;
-    height: 33px;
+    background: url(../images/sprite.svg) no-repeat -11px -540px;
+    width: 10px;
+    height: 20px;
   }
   .main-header__social-icon--1:hover {
-    background: url(../images/sprite.svg) no-repeat 0 -493px;
+    background: url(../images/sprite.svg) no-repeat -11px -500px;
   }
 
   .main-header__social-icon--2 {
-    background: url(../images/sprite.svg) no-repeat -35px -533px;
-    width: 33px;
-    height: 33px;
+    background: url(../images/sprite.svg) no-repeat -44px -543px;
+    width: 17px;
+    height: 15px;
   }
   .main-header__social-icon--2:hover {
-    background: url(../images/sprite.svg) no-repeat -35px -493px;
+    background: url(../images/sprite.svg) no-repeat -44px -503px;
   }
 
   .main-header__social-icon--3 {
-    background: url(../images/sprite.svg) no-repeat -71px -533px;
-    width: 32px;
-    height: 33px;
+    background: url(../images/sprite.svg) no-repeat -78px -541px;
+    width: 18px;
+    height: 18px;
   }
   .main-header__social-icon--3:hover {
-    background: url(../images/sprite.svg) no-repeat -71px -493px;
+    background: url(../images/sprite.svg) no-repeat -78px -501px;
   }
 
   .main-header__social-icon--4 {
-    background: url(../images/sprite.svg) no-repeat -106px -533px;
-    width: 33px;
-    height: 33px;
+    background: url(../images/sprite.svg) no-repeat -115px -540px;
+    width: 15px;
+    height: 20px;
   }
   .main-header__social-icon--4:hover {
-    background: url(../images/sprite.svg) no-repeat -106px -493px;
+    background: url(../images/sprite.svg) no-repeat -115px -500px;
   }
 
   .main-header__social-icon--5 {
-    background: url(../images/sprite.svg) no-repeat -177px -533px;
-    width: 33px;
-    height: 33px;
+    background: url(../images/sprite.svg) no-repeat -185px -540px;
+    width: 16px;
+    height: 19px;
   }
   .main-header__social-icon--5:hover {
-    background: url(../images/sprite.svg) no-repeat -177px -493px;
+    background: url(../images/sprite.svg) no-repeat -185px -500px;
   }
 }
 
