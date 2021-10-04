@@ -514,26 +514,26 @@ body {
         display: block;
         width: 30px;
         height: 31px;
-        margin: auto;
+        margin: 0;
       }
       .footer__contact-about-terms a:hover {
         text-decoration: underline;
       }
     }
-    .footer__copyright {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100vw;
-      background-color: #ff5759;
-      height: 50px;
-      margin: 0;
-      margin-top: 50px;
-      padding: 0;
-      font-weight: 400;
-      color: #fff;
-      font-size: 14px;
-    }
+  }
+  .footer__copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: #ff5759;
+    height: 50px;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+    font-weight: 400;
+    color: #fff;
+    font-size: 14px;
   }
   .contact-us {
     display: flex;
@@ -785,6 +785,41 @@ body {
     height: 19px;
     &:hover {
       background: url(../images/sprite.svg) no-repeat -185px -500px;
+    }
+  }
+  .footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    .footer__web-info {
+      width: 100vw;
+      height: 300px;
+      flex-direction: row;
+      justify-content: space-evenly;
+
+      .footer__contact {
+        flex-direction: row;
+        width: 250px;
+        justify-content: flex-start;
+      }
+      .footer__redes-sociales {
+        &::after {
+          display: none;
+        }
+      }
+      .footer__subscribe {
+        margin-top: 0;
+        padding: 15px 25px 15px 50px;
+        border-top: none;
+        border-left: 1px solid #bbb8b6;
+        .subscribe__items {
+          .email {
+            width: 100px;
+          }
+        }
+        &::after {
+          display: none;
+        }
+      }
     }
   }
 }
