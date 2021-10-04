@@ -171,7 +171,7 @@ body {
       height: 100px;
       margin-bottom: 80px;
       margin-top: 80px;
-      h1 {
+      h2 {
         height: 80px;
         width: 200px;
         font: 12px/1.55 "Source Sans Pro", sans-serif;
@@ -204,7 +204,7 @@ body {
         height: 133px;
         display: flex;
         margin-bottom: 15px;
-        h2 {
+        h3 {
           @extend %h2imagearticle;
         }
       }
@@ -216,7 +216,7 @@ body {
         height: 133px;
         display: flex;
         margin-bottom: 15px;
-        h2 {
+        h3 {
           @extend %h2imagearticle;
         }
       }
@@ -228,7 +228,7 @@ body {
         height: 133px;
         display: flex;
         margin-bottom: 15px;
-        h2 {
+        h3 {
           @extend %h2imagearticle;
         }
       }
@@ -865,6 +865,18 @@ body {
   .footer {
     flex-direction: row;
     flex-wrap: wrap;
+    .footer__marcas {
+      display: block;
+    }
+    .footer__info-icons {
+      height: 260px;
+      align-items: flex-start;
+      .footer__footer-wrapper {
+        width: 100vw;
+        display: flex;
+        margin: 0 150px;
+      }
+    }
     .footer__web-info {
       width: 100vw;
       height: 250px;
@@ -876,6 +888,18 @@ body {
         flex-direction: row;
         width: 250px;
         justify-content: flex-start;
+        height: 180px;
+        display: block;
+        margin-top: 0;
+        padding: 20px 25px 15px 30px;
+        border-top: none;
+        border-left: 1px solid #bbb8b6;
+        display: flex;
+        .footer__contact-about-terms a .icon {
+          margin-left: 0;
+          float: left;
+          margin-right: 10px;
+        }
         .footer__contact-list {
           width: 230px;
           display: flex;
@@ -917,22 +941,6 @@ body {
         }
         .privacy-label {
           top: 150px;
-        }
-      }
-
-      .footer__contact {
-        height: 175px;
-        display: block;
-        margin-top: 0;
-        padding: 15px 25px 15px 30px;
-        border-top: none;
-        border-left: 1px solid #bbb8b6;
-        display: flex;
-        justify-content: flex-start;
-        .footer__contact-about-terms a .icon {
-          margin-left: 0;
-          float: left;
-          margin-right: 10px;
         }
       }
     }
