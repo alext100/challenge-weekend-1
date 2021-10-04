@@ -421,6 +421,7 @@ body {
       flex-direction: column;
       align-items: center;
       width: 325px;
+      position: relative;
       &::after {
         display: block;
         content: "";
@@ -448,33 +449,35 @@ body {
           height: 40px;
           margin-bottom: 10px;
         }
-        .privacy-label {
-          display: flex;
-          justify-content: center;
-          color: #67625f;
-          font-size: 14px;
-          line-height: 16px;
-          font-weight: 400;
-          text-transform: none;
-          & a {
-            color: #67625f;
-          }
+      }
+      .subscribe__button {
+        margin: 15px 0;
+        padding: 10px 0;
+        height: 50px;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 0;
+        font-weight: 700;
+        letter-spacing: 0;
+        background-color: #ff5959;
+        border: none;
+        color: #fff;
+        width: 325px;
+        &:hover {
+          background: rgba(235, 104, 104, 0.5);
         }
-        .subscribe__button {
-          margin: 10px 0;
-          padding: 10px 0;
-          height: 50px;
-          font-size: 14px;
-          text-transform: uppercase;
-          padding: 0;
-          font-weight: 700;
-          letter-spacing: 0;
-          background-color: #ff5959;
-          border: none;
-          color: #fff;
-          &:hover {
-            background: rgba(235, 104, 104, 0.5);
-          }
+      }
+      .privacy-label {
+        position: absolute;
+        bottom: 105px;
+        justify-content: center;
+        color: #67625f;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 400;
+        text-transform: none;
+        & a {
+          color: #67625f;
         }
       }
     }
@@ -514,7 +517,7 @@ body {
         display: block;
         width: 30px;
         height: 31px;
-        margin: 0;
+        margin-left: 55px;
       }
       .footer__contact-about-terms a:hover {
         text-decoration: underline;
@@ -792,7 +795,7 @@ body {
     flex-wrap: wrap;
     .footer__web-info {
       width: 100vw;
-      height: 300px;
+      height: 200px;
       flex-direction: row;
       justify-content: space-evenly;
 
@@ -800,6 +803,10 @@ body {
         flex-direction: row;
         width: 250px;
         justify-content: flex-start;
+        .footer__contact-list {
+          display: flex;
+          justify-content: center;
+        }
       }
       .footer__redes-sociales {
         &::after {
@@ -807,19 +814,55 @@ body {
         }
       }
       .footer__subscribe {
+        width: 425px;
+        display: block;
         margin-top: 0;
         padding: 15px 25px 15px 50px;
         border-top: none;
         border-left: 1px solid #bbb8b6;
         .subscribe__items {
-          .email {
-            width: 100px;
+          display: flex;
+          flex-direction: row;
+          .email-label {
+            display: flex;
+            .email {
+              align-items: flex-start;
+              width: 200px;
+            }
+            .subscribe__button {
+              height: 40px;
+              margin-left: 10px;
+              width: 120px;
+              margin-top: 0;
+              font-size: 14px;
+            }
           }
         }
         &::after {
           display: none;
         }
+        .privacy-label {
+          top: 150px;
+        }
       }
+
+      .footer__contact {
+        display: block;
+        margin-top: 0;
+        padding: 15px 25px 15px 50px;
+        border-top: none;
+        border-left: 1px solid #bbb8b6;
+        display: flex;
+        justify-content: flex-start;
+        .footer__contact-about-terms a .icon {
+          margin-left: 0;
+          float: left;
+          margin-right: 10px;
+        }
+      }
+    }
+    .footer__copyright {
+      margin-top: 0;
     }
   }
 }
