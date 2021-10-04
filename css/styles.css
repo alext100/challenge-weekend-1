@@ -46,9 +46,6 @@ body {
   position: sticky;
   left: 10px;
 }
-.main-header__socials {
-  display: none;
-}
 .main-header__burger div {
   height: 3px;
   background-color: #ff5759;
@@ -84,6 +81,9 @@ body {
 }
 .main-header__nav .icon:hover {
   background: url(../images/sprite.svg) no-repeat -37px 0;
+}
+.main-header .quick-access {
+  display: none;
 }
 .main-header__nav--icon-2 {
   width: 43px;
