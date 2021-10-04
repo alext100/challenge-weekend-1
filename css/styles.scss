@@ -32,89 +32,97 @@ body {
   &__burger {
     width: 28px;
     height: 18px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: sticky;
-    left: 10px;
-  }
-  &__burger div {
-    height: 3px;
-    background-color: #ff5759;
-    border-radius: 15px;
-  }
-  &__logo {
-    max-width: 100%;
-    margin: 80px 0 0 20px;
-    border: 0;
-  }
-  &__border {
-    padding-top: 30px;
-    margin-top: 75px;
-    background-position: top;
-    background-size: 7px 3px;
-    background-repeat: repeat-x;
-    background-image: linear-gradient(
-      to right,
-      #ff5959 25%,
-      rgba(255, 255, 255, 0) 0%
-    );
-  }
-  &__nav--text {
-    display: none;
-  }
-  &__nav {
-    display: flex;
-    height: 43px;
-    position: relative;
-    .icon {
-      background: url(../images/sprite.svg) no-repeat 0 0;
-      width: 27px;
-      height: 27px;
-      margin: 10px;
-      float: left;
-      &:hover {
-        background: url(../images/sprite.svg) no-repeat -37px 0;
-      }
+    padding-bottom: 50px;
+    &__container {
+        background-color: #f8f8f8;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: fixed;
+        width: 100vw;
     }
-  }
-  &__nav--icon-2 {
-    width: 43px;
-  }
-  &__nav--icon-3 {
-    background: #bbb8b6 url(../images/sprite.svg) no-repeat -304px 12px;
-    width: 43px;
-  }
-  &__nav--icon-4 {
-    background: url(../images/sprite.svg) no-repeat -74px 0;
-    width: 43px;
-    background-position-x: -68px;
-    background-position-y: 7px;
-    &:hover {
-      background: #ff5759 url(../images/sprite.svg) no-repeat -114px 0;
-      background-position-x: -68px;
-      background-position-y: 7px;
+    &__burger {
+        width: 28px;
+        height: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: sticky;
+        left: 10px;
     }
-  }
-  &__nav--icon-5 {
-    width: 43px;
-    height: 43px;
-    background-color: #ff5759;
-    position: relative;
-    :nth-child(1) {
-      position: absolute;
-      font-family: "Myriad Pro", "Myriad Web", "Tahoma", "Helvetica", "Arial",
-        sans-serif;
-      font-size: 20px;
-      color: #fff;
-      background: none;
-      display: block;
-      height: auto;
-      margin: 0;
-      left: 38%;
-      top: 20%;
+    &__burger div {
+        height: 3px;
+        background-color: #ff5759;
+        border-radius: 15px;
     }
-  }
+    &__logo {
+        max-width: 100%;
+        margin: 80px 0 0 20px;
+        border: 0;
+    }
+    &__border {
+        padding-top: 30px;
+        margin-top: 75px;
+        background-position: top;
+        background-size: 7px 3px;
+        background-repeat: repeat-x;
+        background-image: linear-gradient( to right, #ff5959 25%, rgba(255, 255, 255, 0) 0%);
+    }
+    &__nav--text {
+        display: none;
+    }
+    &__nav {
+        display: flex;
+        height: 43px;
+        position: relative;
+        .icon {
+            background: url(../images/sprite.svg) no-repeat 0 0;
+            width: 27px;
+            height: 27px;
+            margin: 10px;
+            float: left;
+            &:hover {
+                background: url(../images/sprite.svg) no-repeat -37px 0;
+                color: #ff5959;
+            }
+        }
+    }
+    &__nav--icon-2 {
+        width: 43px;
+    }
+    &__nav--icon-3 {
+        background: #bbb8b6 url(../images/sprite.svg) no-repeat -304px 12px;
+        width: 43px;
+    }
+    &__nav--icon-4 {
+        background: url(../images/sprite.svg) no-repeat -74px 0;
+        width: 43px;
+        background-position-x: -68px;
+        background-position-y: 7px;
+        &:hover {
+            background: #ff5759 url(../images/sprite.svg) no-repeat -114px 0;
+            background-position-x: -68px;
+            background-position-y: 7px;
+        }
+    }
+    &__nav--icon-5 {
+        width: 43px;
+        height: 43px;
+        background-color: #ff5759;
+        position: relative;
+         :nth-child(1) {
+            position: absolute;
+            font-family: "Myriad Pro", "Myriad Web", "Tahoma", "Helvetica", "Arial", sans-serif;
+            font-size: 20px;
+            color: #fff;
+            background: none;
+            display: block;
+            height: auto;
+            margin: 0;
+            left: 38%;
+            top: 20%;
+        }
+    }
 }
 
 .main-content {
