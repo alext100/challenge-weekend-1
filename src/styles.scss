@@ -511,13 +511,15 @@ body {
       display: flex;
       justify-content: center;
       width: 100vw;
+      margin-top: 20px;
       .footer__contact-list ul,
       ol {
         list-style: none;
       }
       .footer__contact-list ul {
         overflow: hidden;
-        margin-top: 55px;
+        margin-top: 0;
+        padding-top: 0;
       }
       .footer__contact-about-terms li {
         line-height: 30px;
@@ -856,83 +858,86 @@ body {
   .main-header__main-icons ul {
     list-style: none;
   }
-}
 
-////////
+  ////////
 
-///////////
-.footer {
-  flex-direction: row;
-  flex-wrap: wrap;
-  .footer__web-info {
-    width: 100vw;
-    height: 200px;
+  ///////////
+  .footer {
     flex-direction: row;
-    justify-content: space-evenly;
-
-    .footer__contact {
+    flex-wrap: wrap;
+    .footer__web-info {
+      width: 100vw;
+      height: 250px;
+      padding-bottom: 70px;
       flex-direction: row;
-      width: 250px;
-      justify-content: flex-start;
-      .footer__contact-list {
-        display: flex;
-        justify-content: center;
-      }
-    }
-    .footer__redes-sociales {
-      &::after {
-        display: none;
-      }
-    }
-    .footer__subscribe {
-      width: 425px;
-      display: block;
-      margin-top: 0;
-      padding: 15px 25px 15px 50px;
-      border-top: none;
-      border-left: 1px solid #bbb8b6;
-      .subscribe__items {
-        display: flex;
+      justify-content: space-evenly;
+
+      .footer__contact {
         flex-direction: row;
-        .email-label {
+        width: 250px;
+        justify-content: flex-start;
+        .footer__contact-list {
+          width: 230px;
           display: flex;
-          .email {
-            align-items: flex-start;
-            width: 200px;
-          }
-          .subscribe__button {
-            height: 40px;
-            margin-left: 10px;
-            width: 120px;
-            margin-top: 0;
-            font-size: 14px;
-          }
+          justify-content: center;
         }
       }
-      &::after {
-        display: none;
+      .footer__redes-sociales {
+        &::after {
+          display: none;
+        }
       }
-      .privacy-label {
-        top: 150px;
+      .footer__subscribe {
+        width: 425px;
+        display: block;
+        margin-top: 0;
+        padding: 15px 25px 15px 50px;
+        border-top: none;
+        border-left: 1px solid #bbb8b6;
+        .subscribe__items {
+          display: flex;
+          flex-direction: row;
+          .email-label {
+            display: flex;
+            .email {
+              align-items: flex-start;
+              width: 200px;
+            }
+            .subscribe__button {
+              height: 40px;
+              margin-left: 10px;
+              width: 120px;
+              margin-top: 0;
+              font-size: 14px;
+            }
+          }
+        }
+        &::after {
+          display: none;
+        }
+        .privacy-label {
+          top: 150px;
+        }
       }
-    }
 
-    .footer__contact {
-      display: block;
-      margin-top: 0;
-      padding: 15px 25px 15px 50px;
-      border-top: none;
-      border-left: 1px solid #bbb8b6;
-      display: flex;
-      justify-content: flex-start;
-      .footer__contact-about-terms a .icon {
-        margin-left: 0;
-        float: left;
-        margin-right: 10px;
+      .footer__contact {
+        height: 175px;
+        display: block;
+        margin-top: 0;
+        padding: 15px 25px 15px 30px;
+        border-top: none;
+        border-left: 1px solid #bbb8b6;
+        display: flex;
+        justify-content: flex-start;
+        .footer__contact-about-terms a .icon {
+          margin-left: 0;
+          float: left;
+          margin-right: 10px;
+        }
       }
     }
-  }
-  .footer__copyright {
-    margin-top: 0;
+    .footer__copyright {
+      margin-top: 0;
+    }
   }
 }
